@@ -3,6 +3,8 @@ let powerDown = new Audio("/assets/smb_pipe.wav");
 let stageClear = new Audio("/assets/smb_stage_clear.wav");
 let previousAudio = mushroom;
 
+[mushroom, powerDown, stageClear].map(audio => audio.volume = 0.1);
+
 document.addEventListener("DOMContentLoaded", setUpDOM);
 
 function setUpDOM() {

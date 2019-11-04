@@ -95,6 +95,10 @@ body {
   background-color: #675682;
 }
 
+a {
+    color: #fff;
+}
+
 h1 {
   font-family: "Staatliches", Georgia, serif;
   text-decoration: underline overline #E52A6F wavy;
@@ -162,8 +166,7 @@ li.complete {
   flex-flow: row wrap;
   background-color: #675682;
   flex: 1 1 100%;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
 }
 
 .col-1, .col-3 {

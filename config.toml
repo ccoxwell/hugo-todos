@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://accessible-flat.glitch.me/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "MASE To Dos"
 theme = "carrie"
 
 [taxonomies]
