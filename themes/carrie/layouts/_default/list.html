@@ -11,7 +11,7 @@
                 <h2 id="go-back"><a href="/">Go Back</a></h2>
             </div>
             <div class="col-3">
-                <ul>
+                <ul id="list-of-lists">
                     {{ range .Data.Pages.ByDate.Reverse }}
                     <li>
                         <a href="{{ .Permalink }}">
