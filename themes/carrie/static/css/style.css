@@ -99,11 +99,18 @@ a {
     color: #fff;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Staatliches", Georgia, serif;
+}
+
+h1 {
   text-decoration: underline overline #E52A6F wavy;
   text-decoration-skip-ink: none;
   font-size: 2.5em;
+}
+
+#go-back::before {
+  content: "\2b05";
 }
 
 @counter-style emojis {
@@ -112,8 +119,13 @@ h1 {
   suffix: " ";
 }
 
-#to-do-list ol, #to-do-list ul {
+#to-do-list ol, #to-do-list ul, ul#class-list {
   list-style: none;
+}
+
+#class-list li::before {
+  content: "\1f33b";
+  padding-right: 0.5em;
 }
 
 #to-do-list li::before {
