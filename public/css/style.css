@@ -119,8 +119,25 @@ h1 {
   suffix: " ";
 }
 
-#to-do-list ol, #to-do-list ul, ul#class-list {
+@counter-style flowers {
+  system: cyclic;
+  symbols: "\1f33b";
+  suffix: " ";
+}
+
+@counter-style carousel {
+  system: cyclic;
+  symbols: "\1F3A0";
+  suffix: " ";
+}
+
+#to-do-list ol, #to-do-list ul, #class-list, #list-of-lists {
   list-style: none;
+}
+
+#list-of-lists li::before {
+  content: "\1F3A0";
+  padding-right: 0.5em;
 }
 
 #class-list li::before {
@@ -135,8 +152,8 @@ h1 {
   display: inline-block;
 }
 
-#to-do-list li {
-  text-indent: -1.3em;
+#to-do-list li, #class-list li {
+  text-indent: -1em;
   padding: 0.5em;
 }
 
@@ -146,11 +163,19 @@ h1 {
         #to-do-list ol, #to-do-list ul {
           list-style-type: emojis;
         }
-        #to-do-list li::before {
+
+        #list-of-lists {
+          list-style-type: carousel;
+        }
+        #to-do-list li::before, #class-list li::before, #list-of-lists li::before {
           content: none;
         }
-        #to-do-list li {
+        #to-do-list li, #class-list li {
           text-indent: 0;
+        }
+
+        ol#class-list, ul#class-list {
+          list-style-type: flowers;
         }
     }
 }
@@ -183,6 +208,7 @@ li.complete {
 
 .col-1, .col-3 {
   flex: 0 0 92%;
+  padding: 1.5em;
 }
 
 @media (min-width: 849px) {
