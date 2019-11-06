@@ -4,3 +4,5 @@ date: {{ .Date }}
 draft: true
 ---
 
+- Complete and turn in your Do Now
+- Complete and turn in your Exit Ticket
