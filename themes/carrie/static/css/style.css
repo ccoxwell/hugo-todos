@@ -86,98 +86,85 @@ select {
   }
 }
 
-
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: Montserrat, arial, sans-serif;
+  font-family: Nunito, arial, sans-serif;
   color: #fff;
   background-color: #675682;
+  line-height: 1.2;
 }
 
 a {
-    color: #fff;
+  color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Staatliches", Georgia, serif;
 }
 
 h1 {
-  text-decoration: underline overline #E52A6F wavy;
-  text-decoration-skip-ink: none;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
-#go-back::before {
+li:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+#todo-date {
+  background: #E52A6F;
+}
+
+#go-back a::before {
   content: "\2b05";
-}
-
-@counter-style emojis {
-  system: cyclic;
-  symbols: "\1F994" "\1F988" "\1F984" "\1F48E" "\1F308" "\1F991";
-  suffix: " ";
-}
-
-@counter-style flowers {
-  system: cyclic;
-  symbols: "\1f33b";
-  suffix: " ";
-}
-
-@counter-style carousel {
-  system: cyclic;
-  symbols: "\1F3A0";
-  suffix: " ";
-}
-
-#to-do-list ol, #to-do-list ul, #class-list, #list-of-lists {
-  list-style: none;
-}
-
-#list-of-lists li::before {
-  content: "\1F3A0";
-  padding-right: 0.5em;
-}
-
-#class-list li::before {
-  content: "\1f33b";
-  padding-right: 0.5em;
-}
-
-#to-do-list li::before {
-  content: "\1F984";
-  padding-right: 0.5em;
-  text-decoration: none;
   display: inline-block;
 }
 
-#to-do-list li, #class-list li {
+ol,
+ul {
+  list-style: none;
+}
+
+li::before {
+  text-decoration: none;
+  width: 1em;
+}
+
+li {
   text-indent: -1em;
-  padding: 0.5em;
+}
+
+li::before {
+  content: "\1F308";
+  display: inline-block;
+}
+
+#go-back {
+  background: #E9B000;
+}
+
+#go-back, #go-back a {
+  color: #333;
 }
 
 @-moz-document url-prefix() {
-    @supports (animation: calc(0s)) {
-        /* Stylo */
-        #to-do-list ol, #to-do-list ul {
-          list-style-type: emojis;
-        }
-
-        #list-of-lists {
-          list-style-type: carousel;
-        }
-        #to-do-list li::before, #class-list li::before, #list-of-lists li::before {
-          content: none;
-        }
-        #to-do-list li, #class-list li {
-          text-indent: 0;
-        }
-
-        ol#class-list, ul#class-list {
-          list-style-type: flowers;
-        }
+  @supports (animation: calc(0s)) {
+    /* Stylo */
+    ol, ul {
+      list-style-type: "\1F308";
     }
+    li::before {
+      content: none;
+    }
+    li {
+      text-indent: 0;
+    }
+  }
 }
 
 #to-do-list li:hover {
@@ -190,41 +177,69 @@ li.complete {
   text-decoration-color: #E52A6F;
 }
 
-.container {
-  display: flex;
-  flex-flow: row nowrap;
-  height: 100vh;
-}
-
 .row {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   background-color: #675682;
   flex: 1 1 100%;
-  padding: 1em;
 }
 
-.col-1, .col-3 {
-  flex: 0 0 92%;
-  padding: 1.5em;
+.col-1,
+.col-3 {
+  flex: 0 0 100%;
 }
 
+.col-1 {
+  text-align: right;
+}
+
+.col-1 div {
+  padding: 0.5em;
+}
+
+.list-container {
+  padding: 0.5em;
+}
+/* glitch button */
+.glitchButton {
+  position:fixed;
+  top:20px;
+  left:20px;
+}
 @media (min-width: 849px) {
   body {
     background-color: #67AECA;
   }
-  .container { 
+  
+  .col-1, #go-back, #todo-date{
+    display: flex;
+  }
+  #go-back, #todo-date {
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    padding-right: 2em;
+  }
+  
+  .container {
+    display: flex;
     align-items: center;
+    height: 100vh;
   }
   .col-1 {
     flex: 0 0 50%;
-    background-color: inherit;
-    text-align: right;
-    padding-right: 1em;
+    flex-flow: column;
   }
   .col-3 {
     flex: 0 0 50%;
+    padding-left: 1em;
+  }
+  /* glitch button */
+  .glitchButton {
+    position:fixed;
+    top:20px;
+    right:20px;
   }
 }
+
