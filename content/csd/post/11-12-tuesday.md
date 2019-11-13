@@ -1,5 +1,5 @@
 ---
-title: "Tuesday, November 11, 2019"
+title: "Wednesday, November 13, 2019"
 date: 2019-11-12T07:02:19-06:00
 draft: false
 ---
