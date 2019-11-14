@@ -144,6 +144,10 @@ li::before {
   display: inline-block;
 }
 
+.kokoken li::before {
+  content: "\1F49C";
+}
+
 #go-back {
   background: #E9B000;
 }
