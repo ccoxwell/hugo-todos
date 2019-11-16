@@ -1,4 +1,4 @@
-baseURL = "https://accessible-flat.glitch.me/"
+baseURL = "/"
 languageCode = "en-us"
 title = "MASE To Dos"
 theme = "carrie"
@@ -11,14 +11,14 @@ theme = "carrie"
 [params]
   titleEmoji = ":tada:"
   # change this!
-  twitter = "siegerts"
+  twitter = "go_carrie_go"
 
 [Permalinks]
-  post = "post/:slug"
+  post = "todos/:slug"
 
 [[params.menu]]
-  name = "blog"
-  url = "post/"
+  name = "todos"
+  url = "todos/"
 
 [[params.menu]]
   name = "post series"
