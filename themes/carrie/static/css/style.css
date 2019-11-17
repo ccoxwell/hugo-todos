@@ -144,8 +144,12 @@ li::before {
   display: inline-block;
 }
 
-.kokoken li::before {
+.emoji-kokoken li::before {
   content: "\1F49C";
+}
+
+.emoji-mr-maden li::before {
+  content: "\1F92C";
 }
 
 #go-back {
@@ -162,8 +166,8 @@ li::before {
     ol, ul {
       list-style-type: "\1F308";
     }
-    li::before {
-      content: none;
+    li::before, [class^="emoji"] li::before {
+      content: none!important;
     }
     li {
       text-indent: 0;

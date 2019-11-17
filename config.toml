@@ -1,4 +1,4 @@
-baseURL = "https://accessible-flat.glitch.me/"
+baseURL = "/"
 languageCode = "en-us"
 title = "MASE To Dos"
 theme = "carrie"
