@@ -2,6 +2,7 @@
 title: "Friday, November 15, 2019"
 date: 2019-11-15T07:45:19-06:00
 draft: false
+emojiClass: ""
 ---
 
 - Do Now: Go through the vocab that's posted in Google Classroom and write it in your T-Chart
