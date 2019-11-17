@@ -152,9 +152,8 @@ li::before {
   color: #333;
 }
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   @supports (animation: calc(0s)) {
-    /* Stylo */
     ol, ul {
       list-style-type: "\1F308";
     }
@@ -165,7 +164,7 @@ li::before {
       text-indent: 0;
     }
   }
-}
+} */
 
 #to-do-list li:hover {
   cursor: pointer;
