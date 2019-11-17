@@ -2,6 +2,7 @@
 title: "Thursday, November 7, 2019"
 date: 2019-11-06T18:51:49-06:00
 draft: false
+emojiClass: ""
 ---
 
 - Complete and turn in your Do Now

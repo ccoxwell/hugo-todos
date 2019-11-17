@@ -2,6 +2,7 @@
 title: "Thursday, November 14, 2019"
 date: 2019-11-13T19:07:19-06:00
 draft: false
+emojiClass: ""
 ---
 
 - Do Now: Write the new vocab on your T-Chart
