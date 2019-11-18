@@ -152,21 +152,6 @@ li::before {
   color: #333;
 }
 
-@-moz-document url-prefix() {
-  @supports (animation: calc(0s)) {
-    /* Stylo */
-    ol, ul {
-      list-style-type: "\1F308";
-    }
-    li::before {
-      content: none;
-    }
-    li {
-      text-indent: 0;
-    }
-  }
-}
-
 #to-do-list li:hover {
   cursor: pointer;
   text-decoration: line-through;
