@@ -1,7 +1,7 @@
 ---
 title: "Tuesday, November 19, 2019"
 date: 2019-11-19T07:55:25-06:00
-draft: false
+draft: true
 emojiClass: "emoji-shunterria"
 ---
 
