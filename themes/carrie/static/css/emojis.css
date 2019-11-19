@@ -5,3 +5,7 @@
 .emoji-mr-maden li::before {
   content: "\1F92C";
 }
+
+.emoji-shunterria li::before {
+  content: "\1F970";
+}
