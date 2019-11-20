@@ -9,3 +9,7 @@
 .emoji-shunterria li::before {
   content: "\1F970";
 }
+
+.emoji-andrea li::before {
+  content: "\1F49B";
+}
