@@ -18,7 +18,7 @@
             <div class="col-3 right-side">
                 <article class="list-container">
                     <ul id="list-of-lists">
-                        {{ range .Data.Pages.ByDate.Reverse }}
+                        {{ range first 5 .Data.Pages.ByDate.Reverse }}
                         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                         {{ end }}
                     </ul>

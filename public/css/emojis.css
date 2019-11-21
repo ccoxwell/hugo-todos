@@ -13,3 +13,7 @@
 .emoji-andrea li::before {
   content: "\1F49B";
 }
+
+.emoji-jayron li::before {
+  content: "\1F602";
+}
