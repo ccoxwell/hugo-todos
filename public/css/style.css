@@ -89,23 +89,7 @@ select {
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: Nunito, arial, sans-serif;
-  color: #fff;
-  background-color: #675682;
   line-height: 1.2;
-}
-
-a {
-  color: #fff;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Staatliches", Georgia, serif;
 }
 
 h1 {
@@ -114,10 +98,6 @@ h1 {
 
 li:not(:last-child) {
   margin-bottom: 1em;
-}
-
-#todo-date {
-  background: #E52A6F;
 }
 
 #go-back a::before {
@@ -144,14 +124,6 @@ li::before {
   display: inline-block;
 }
 
-#go-back {
-  background: #E9B000;
-}
-
-#go-back, #go-back a {
-  color: #333;
-}
-
 #to-do-list li:hover {
   cursor: pointer;
   text-decoration: line-through;
@@ -159,14 +131,12 @@ li::before {
 
 li.complete {
   text-decoration: line-through;
-  text-decoration-color: #E52A6F;
 }
 
 .row {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #675682;
   flex: 1 1 100%;
 }
 
@@ -193,9 +163,6 @@ li.complete {
   left:20px;
 }
 @media (min-width: 849px) {
-  body {
-    background-color: #67AECA;
-  }
   
   .col-1, #go-back, #todo-date{
     display: flex;
