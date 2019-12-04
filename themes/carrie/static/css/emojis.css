@@ -17,3 +17,7 @@
 .emoji-jayron li::before {
   content: "\1F602";
 }
+
+.emoji-landon li::before {
+  content: "\1F451";
+}
