@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/csdwa/</loc>
-    <lastmod>2019-12-05T09:21:43-06:00</lastmod>
+    <loc>/csp/</loc>
+    <lastmod>2019-12-06T07:54:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/csp/post/12-06-friday/</loc>
+    <lastmod>2019-12-06T07:54:13-06:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2019-12-06T07:54:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/csdwa/</loc>
     <lastmod>2019-12-05T09:21:43-06:00</lastmod>
   </url>
   
@@ -25,11 +35,6 @@
   <url>
     <loc>/csd/post/12-05-thursday/</loc>
     <lastmod>2019-12-05T09:15:52-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/csp/</loc>
-    <lastmod>2019-12-05T08:35:29-06:00</lastmod>
   </url>
   
   <url>
